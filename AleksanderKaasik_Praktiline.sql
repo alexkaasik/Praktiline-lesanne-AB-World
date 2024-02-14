@@ -34,6 +34,7 @@ SELECT sum(Population), sum(SurfaceArea) FROM `country` where Continent like "%E
 --17  Число стран, расположенных не в Антарктике (234 записи)
 SELECT Name FROM `country` where Name != "Antarctica"; 
 --18 Число стран, где главой правительства является Елизавета II (Elisabeth II), суммарное число жителей этих стран.  (35 стран, 122 872 550 человек)
---19  Число стран, наибольшее и наименьшее число жителей стран Полинезии (Polynesia) (10 стран, 235 000 человек, 50 человек)
+--19 Число стран, наибольшее и наименьшее число жителей стран Полинезии (Polynesia) (10 стран, 235 000 человек, 50 человек)
+SELECT count(Name), max(Population), min(Population) FROM `country` where Region = "Polynesia";
 --20 Первые 5% списка стран мира наименьшей площади
 
