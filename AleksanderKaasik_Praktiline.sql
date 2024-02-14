@@ -1,8 +1,9 @@
 -- 1 Страны, названия которых начинаются на букву “К” (5 записей);
 SELECT * FROM country WHERE name LIKE "k%"; 
 -- 2 Страны, получившие независимость в 19-м веке (27 записей)
-SELECT name indepYear from country where indepYear between 1900 and 1999; 
+SELECT name indepYear from country where indepYear between 1900 and 1999;
 -- 3 Страны ближнего востока (Middle East) (18 записей)
+SELECT Name, Region FROM `country` WHERE Region LIKE "Middle East%"; 
 -- 4 Европейские страны, которые образовались в 19 веке (7 записей)
 -- 5 Страны, в названиях которых содержат слог “ра”  (9 записей)
 -- 6 Страны, названия которых начинаются на гласную букву  (A, E, I, O, U, Y) (42 записи);
