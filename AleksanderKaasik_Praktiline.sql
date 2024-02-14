@@ -30,6 +30,7 @@ SELECT Name, Population FROM `country` ORDER by Population;
 --15 Первую десятку наиболее населенных государств Европы
 SELECT Name, Population FROM `country` where Region like "%Europe%" ORDER by Population DESC; 
 --16 Cуммарное число жителей стран Европы и суммарную площадь её государств (730 074 600, 23 049 133.9)
+SELECT sum(Population), sum(SurfaceArea) FROM `country` where Continent like "%Europe%"; 
 --17  Число стран, расположенных не в Антарктике (234 записи)
 SELECT Name FROM `country` where Name != "Antarctica"; 
 --18 Число стран, где главой правительства является Елизавета II (Elisabeth II), суммарное число жителей этих стран.  (35 стран, 122 872 550 человек)
