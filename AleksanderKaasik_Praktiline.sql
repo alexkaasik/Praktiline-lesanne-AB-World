@@ -9,6 +9,7 @@ SELECT Name, Region, indepYear FROM `country` WHERE Region LIKE "%Europe" and in
 -- 5 Страны, в названиях которых содержат слог “ра”  (9 записей)
 SELECT * FROM country WHERE Name LIKE "%ra%"; 
 -- 6 Страны, названия которых начинаются на гласную букву  (A, E, I, O, U, Y) (42 записи);
+SELECT * FROM `country` WHERE name LIKE "A%" or name LIKE "A%" or name LIKE "E%" or name LIKE "I%" or name LIKE "U%" or name LIKE "Y%"; 
 -- 7 Страны, названия которых начинаются и заканчиваются на одну и ту же букву. (20 записей)
 -- 8 Государства, формой правления которых является различной формы монархия (43 записи)
 -- 9 Страны, население которых меньше 1 млн. (85 записей)
