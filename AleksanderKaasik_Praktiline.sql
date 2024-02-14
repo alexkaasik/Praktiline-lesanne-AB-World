@@ -24,9 +24,11 @@ SELECT name, IndepYear from country ORDER by IndepYear limit 1;
 --12 Страны, год обретения независимости которыми или столица которых и  не определены (47 записей)
 
 --13 Самое маленькое по площади государство (Holy See (Vatican City State))
-SELECT Name, SurfaceArea FROM `country` ORDER BY SurfaceArea limit 1; 
+SELECT Name, SurfaceArea FROM `country` ORDER BY SurfaceArea limit 1;
 --14 Первую десятку наиболее населенных государств мира
+SELECT Name, Population FROM `country` ORDER by Population; 
 --15 Первую десятку наиболее населенных государств Европы
+SELECT Name, Population FROM `country` where Region like "%Europe%" ORDER by Population DESC; 
 --16 Cуммарное число жителей стран Европы и суммарную площадь её государств (730 074 600, 23 049 133.9)
 --17  Число стран, расположенных не в Антарктике (234 записи)
 --18 Число стран, где главой правительства является Елизавета II (Elisabeth II), суммарное число жителей этих стран.  (35 стран, 122 872 550 человек)
