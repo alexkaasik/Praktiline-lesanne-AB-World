@@ -13,6 +13,7 @@ SELECT * FROM `country` WHERE name LIKE "A%" or name LIKE "A%" or name LIKE "E%"
 -- 7 Страны, названия которых начинаются и заканчиваются на одну и ту же букву. (20 записей)
 SELECT name FROM `country` where LEFT(Name, 1) = RIGHT(Name,1); 
 -- 8 Государства, формой правления которых является различной формы монархия (43 записи)
+SELECT name, GovernmentForm FROM `country` where GovernmentForm like "%Monarchy%";
 -- 9 Страны, население которых меньше 1 млн. (85 записей)
 --10 Самое древнее государство (China)
 --11 Страны, год обретения независимости которыми не определен (47 записей)
