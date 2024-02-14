@@ -7,6 +7,7 @@ SELECT Name, Region FROM `country` WHERE Region LIKE "Middle East%";
 -- 4 Европейские страны, которые образовались в 19 веке (7 записей)
 SELECT Name, Region, indepYear FROM `country` WHERE Region LIKE "%Europe" and indepYear between 1900 and 1999; 
 -- 5 Страны, в названиях которых содержат слог “ра”  (9 записей)
+SELECT * FROM country WHERE Name LIKE "%ra%"; 
 -- 6 Страны, названия которых начинаются на гласную букву  (A, E, I, O, U, Y) (42 записи);
 -- 7 Страны, названия которых начинаются и заканчиваются на одну и ту же букву. (20 записей)
 -- 8 Государства, формой правления которых является различной формы монархия (43 записи)
