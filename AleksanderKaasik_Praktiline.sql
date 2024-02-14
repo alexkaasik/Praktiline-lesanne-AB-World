@@ -15,6 +15,7 @@ SELECT name FROM `country` where LEFT(Name, 1) = RIGHT(Name,1);
 -- 8 Государства, формой правления которых является различной формы монархия (43 записи)
 SELECT name, GovernmentForm FROM `country` where GovernmentForm like "%Monarchy%";
 -- 9 Страны, население которых меньше 1 млн. (85 записей)
+SELECT name, Population from country where Population < 1000000;
 --10 Самое древнее государство (China)
 --11 Страны, год обретения независимости которыми не определен (47 записей)
 --12 Страны, год обретения независимости которыми или столица которых и  не определены (47 записей)
