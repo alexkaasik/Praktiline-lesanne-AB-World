@@ -10,6 +10,7 @@ SELECT Name, Region, indepYear FROM `country` WHERE Region LIKE "%Europe" and in
 SELECT * FROM country WHERE Name LIKE "%ra%"; 
 -- 6 Страны, названия которых начинаются на гласную букву  (A, E, I, O, U, Y) (42 записи);
 SELECT * FROM `country` WHERE name LIKE "A%" or name LIKE "A%" or name LIKE "E%" or name LIKE "I%" or name LIKE "U%" or name LIKE "Y%"; 
+SELECT name from country where name RLIKE '^[A,E,I,O,U,Y]'; 
 -- 7 Страны, названия которых начинаются и заканчиваются на одну и ту же букву. (20 записей)
 SELECT name FROM `country` where LEFT(Name, 1) = RIGHT(Name,1); 
 -- 8 Государства, формой правления которых является различной формы монархия (43 записи)
@@ -19,8 +20,11 @@ SELECT name, Population from country where Population < 1000000;
 --10 Самое древнее государство (China)
 SELECT name, IndepYear from country ORDER by IndepYear limit 1; 
 --11 Страны, год обретения независимости которыми не определен (47 записей)
+-- No answer
 --12 Страны, год обретения независимости которыми или столица которых и  не определены (47 записей)
+
 --13 Самое маленькое по площади государство (Holy See (Vatican City State))
+SELECT Name, SurfaceArea FROM `country` ORDER BY SurfaceArea limit 1; 
 --14 Первую десятку наиболее населенных государств мира
 --15 Первую десятку наиболее населенных государств Европы
 --16 Cуммарное число жителей стран Европы и суммарную площадь её государств (730 074 600, 23 049 133.9)
