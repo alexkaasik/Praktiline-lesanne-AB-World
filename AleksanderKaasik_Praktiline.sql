@@ -17,6 +17,7 @@ SELECT name, GovernmentForm FROM `country` where GovernmentForm like "%Monarchy%
 -- 9 Страны, население которых меньше 1 млн. (85 записей)
 SELECT name, Population from country where Population < 1000000;
 --10 Самое древнее государство (China)
+SELECT name, IndepYear from country ORDER by IndepYear limit 1; 
 --11 Страны, год обретения независимости которыми не определен (47 записей)
 --12 Страны, год обретения независимости которыми или столица которых и  не определены (47 записей)
 --13 Самое маленькое по площади государство (Holy See (Vatican City State))
