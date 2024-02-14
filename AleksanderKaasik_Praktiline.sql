@@ -31,6 +31,7 @@ SELECT Name, Population FROM `country` ORDER by Population;
 SELECT Name, Population FROM `country` where Region like "%Europe%" ORDER by Population DESC; 
 --16 Cуммарное число жителей стран Европы и суммарную площадь её государств (730 074 600, 23 049 133.9)
 --17  Число стран, расположенных не в Антарктике (234 записи)
+SELECT Name FROM `country` where Name != "Antarctica"; 
 --18 Число стран, где главой правительства является Елизавета II (Elisabeth II), суммарное число жителей этих стран.  (35 стран, 122 872 550 человек)
 --19  Число стран, наибольшее и наименьшее число жителей стран Полинезии (Polynesia) (10 стран, 235 000 человек, 50 человек)
 --20 Первые 5% списка стран мира наименьшей площади
